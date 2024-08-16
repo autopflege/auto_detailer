@@ -1,0 +1,74 @@
+.hex_container {
+  position: absolute;
+  overflow: hidden;
+  z-index: -700;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.divider {
+    width: 100%;
+    height: 10px;
+    background-color: #121515;
+    filter: drop-shadow(0.4rem 0.4rem 0.5rem #ff7300e1);
+}
+
+.divider_2 {
+    width: 100%;
+    height: 10px;
+    background-color: #121515;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(10, 14, 16, 0.908));
+}
+
+.hex_container .hexs_row {
+    display: inline-flex;
+    margin-top: -28px;
+    margin-left: -52px;
+}
+
+.hex_container .hexs_row:nth-child(even){
+    margin-left: -5px;
+}
+
+.hex_container .hexs_row .hexagon {
+    position: relative;
+    width: 90px;
+    height: 100px;
+    background-color: #13131a;
+    margin: 2px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: 4s;
+    top: 20px;
+}
+
+.hex_container .hexs_row .hexagon::before {
+    content: '';
+    width: 50%;
+    height: 98%;
+    position: absolute;
+    background: rgba(195, 220, 255, 0.02);
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.hex_cursor {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #de6400e1;
+    border-radius: 50%;
+    transform: translate(-80%, -180%);
+    animation: anim 2s linear infinite;
+    z-index: -1;
+}
+@keyframes anim {
+    0% {
+      filter: hue-rotate(0deg) blur(50px);
+    }
+    100% {
+        filter: hue-rotate(360deg) blur(50px);
+    }
+}
