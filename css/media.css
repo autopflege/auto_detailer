@@ -485,6 +485,10 @@
 }
 
 @media screen and (max-width: 770px) {
+  .hex_container {
+    height: -webkit-fill-available;
+  }
+
   .titles_info {
     line-height: 1.4;
   }
@@ -521,6 +525,10 @@
 }
 
 @media screen and (max-width: 585px) {
+  .hex_container {
+    height: -webkit-fill-available;
+  }
+
   #details {
     background-size: 800px;
     background-position: -12em -13em;
@@ -757,6 +765,9 @@
 }
 
 @media screen and (width: 540px) {
+  .hex_container {
+    height: -webkit-fill-available;
+  }
 
   .photo_block {
     width: 12em;
@@ -783,6 +794,10 @@
 }
 
 @media screen and (max-width: 395px) {
+  .hex_container {
+    height: -webkit-fill-available;
+  }
+  
   .info {
     margin: auto 4em;
   }
