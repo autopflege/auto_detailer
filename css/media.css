@@ -798,6 +798,10 @@
 }
 
 @media screen and (max-width: 395px) {
+  .hex_container .invisible {
+    display: none;
+}
+
   .hex_container {
     height: -webkit-fill-available;
   }
