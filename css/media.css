@@ -268,9 +268,9 @@
     height: -webkit-fill-available;
   }
 
-  .invisible {
+  .hex_container .invisible {
     display: none;
-  }
+}
 
   #details {
     background-size: 960px;
