@@ -616,6 +616,8 @@ footer {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  position: absolute;
+  z-index: 2000;
 }
 
 /*Accordion*/
