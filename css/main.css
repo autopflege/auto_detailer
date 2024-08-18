@@ -87,7 +87,6 @@ header {
 .wrapper_2 {
   margin: 0 auto;
   padding-top: 35px;
-  /* padding-bottom: 50px; */
   width: 1200px;
   position: relative;
 }
@@ -231,7 +230,6 @@ a.mail {
   display: flex;
   flex-direction: column;
   line-height: 1.15;
-  /* justify-content: space-evenly; */
 }
 
 .row_info {
@@ -331,7 +329,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   cursor: pointer;
-  margin-left: 2em;
+  margin-left: 1.7em;
 }
 
 .icons img {
@@ -546,18 +544,6 @@ a.beetroot {
   color: #fc7f1f;
 }
 
-
-/* languege changing buttons*/
-
-/* hides all Polish blocks by default */
-[lang="pl"] {
-    display: block;
-}
-/* hides all English blocks by default */
-[lang="en"] {
-    display: none;
-}
-
 .row-name-lang {
   display: flex;
     position: absolute;
@@ -586,7 +572,7 @@ a.beetroot {
   margin-right: 1.5em;
 }
 
-.lang-choice input {
+.lang-choice a {
   font-family: "Nasalization", sans-serif;
   background-color: transparent;
   border: none;
