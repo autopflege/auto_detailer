@@ -908,7 +908,7 @@
 
 @media screen and (max-width: 345px) {
   .info {
-    margin: auto 3em;
+    margin: auto 2em;
     justify-content: center;
   }
 
