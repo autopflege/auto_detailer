@@ -547,7 +547,7 @@ a.beetroot {
   display: flex;
   position: absolute;
   z-index: 9999999;
-  left: 18em;
+  left: 15em;
   top: -3.5em;
   flex-direction: row-reverse;
   align-items: baseline;
@@ -588,8 +588,6 @@ a.beetroot {
 .lang-choice a:active {
   color: #fc7f1f;
 }
-
-
 
 /*footer*/
 footer {

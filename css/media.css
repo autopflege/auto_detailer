@@ -147,7 +147,7 @@
   }
 
   .row-name-lang {
-    left: 22em;
+    left: 20em;
     top: -8.2em;
   }
 
@@ -698,7 +698,7 @@
   .info {
     display: flex;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.1em;
     flex-flow: row wrap;
     margin: auto 4.9em;
   }
@@ -850,8 +850,8 @@
   }
 
   .row-name-lang {
-    left: 2.5em;
-    top: -10.5em;
+    left: 2.7em;
+    top: -12.5em;
   }
 
   .lang-choice ul {
