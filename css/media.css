@@ -361,7 +361,7 @@
   }
 
   .row-name-lang {
-    left: 16em;
+    left: 13em;
     top: -7.3em;
   }
 
@@ -502,7 +502,7 @@
   }
 
   .row-name-lang {
-    left: 12em;
+    left: 10em;
     top: -8em;
   }
 
@@ -768,33 +768,62 @@
   }
 }
 
-@media screen and (width: 540px) {
+@media screen and (max-width: 540px) {
   .hex_container {
     height: -webkit-fill-available;
   }
 
   .photo_block {
     width: 12em;
-    bottom: -52px;
+    bottom: -48px;
   }
 
   #contacts {
-    background-size: 750px;
-    background-position: -7em -15em;
+    background-size: 680px;
+    background-position: -10em -13em;
     height: 170px;
   }
 
   .custom_shape {
-    width: 13em;
-    height: 13em;
-    left: -7px;
-    bottom: -4px;
+    width: 13.5em;
+    height: 13.5em;
+    left: -10.5px;
+    bottom: -7.5px;
   }
 
   .row-name-lang {
-    left: 6em;
-    top: -7.5em;
+    left: 4.5em;
+    top: -11.5em;
   }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.answers_info {
+  margin-left: 0.5em;
+}
+
+
+.row_info {
+  gap: 0;
+}
+
+  .lang-choice li {
+    margin-right: 0;
+    margin-bottom: 0.4em;
+}
+
+  .lang-choice ul {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em 0.6em 0.2em 0.6em;
+    border-radius: 50px 50px 0 0;
+}
 }
 
 @media screen and (max-width: 395px) {
@@ -829,6 +858,10 @@
 
   .lang-choice a {
     font-size: 15px;
+  }
+
+  .answers_info {
+    margin-left: 1em;
   }
 
 }
