@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateTabs(activeTabId) {
-        var activeLang = document.querySelector('#english').style.display === 'block' ? 'english' : 'polish';
+        var activeLang = document.querySelector('#polish').style.display === 'block' ? 'polish' : 'english';
         
         document.querySelectorAll('.details_tabs').forEach(function(tab) {
             tab.classList.remove('details_active');

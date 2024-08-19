@@ -491,7 +491,6 @@ a.beetroot {
 .warning {
   flex: 1 auto; 
   align-self: flex-start;
-  /* margin: 20px 10px; */
 }
 
 .skill_box h3 {
@@ -546,13 +545,13 @@ a.beetroot {
 
 .row-name-lang {
   display: flex;
-    position: absolute;
-    z-index: 9999999;
-    left: 18em;
-    top: -3.5em;
-    flex-direction: row-reverse;
-    align-items: baseline;
-    justify-content: space-between;
+  position: absolute;
+  z-index: 9999999;
+  left: 18em;
+  top: -3.5em;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .lang-choice ul {
@@ -580,13 +579,13 @@ a.beetroot {
   color: #FFF;
 }
 
-.lang-choice input:hover {
+.lang-choice a:hover {
   color: #fc7f1f;
   background-color: transparent;
   cursor: pointer;
 }
 
-.lang-choice input:active {
+.lang-choice a:active {
   color: #fc7f1f;
 }
 
