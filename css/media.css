@@ -573,11 +573,41 @@
     margin-top: -20px;
     margin-left: -37px;
 }
-
+/* Hex cursor for mobile */
 .hex_cursor {
-  width: 10em;
-  height: 10em;
+  width: 8em;
+  height: 8em;
+
+  --xA: 10em;
+  --yA: 12em;
+  --xB: 10em;
+  --yB: 5em;
+
+  animation: anim 2s linear infinite, move_hex 6s infinite alternate;
+  animation-fill-mode: both;
 }
+  @keyframes anim {
+    0% {
+      filter: hue-rotate(0deg) blur(50px);
+    }
+    100% {
+        filter: hue-rotate(360deg) blur(50px);
+    }
+  }
+  @keyframes move_hex {
+  0% {left:15em; top: 15em;}
+  25%  {left: 30em; top: 15em;}
+  50%  {left: 30em; top: 25em;}
+  75%  {left: 5em; top: 25em;}
+  100% {left: 5em; top: 15em;}
+  }
+
+
+
+
+
+
+
 
   #details {
     background-size: 800px;
