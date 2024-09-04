@@ -297,6 +297,15 @@ button.download {
   font-family: "Nasalization", sans-serif;
 }
 
+button.whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  padding: 0.69em 2em;
+}
+
 button:before {
   content: "";
   width: 1.3em;
