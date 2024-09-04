@@ -1,22 +1,24 @@
 let cursor = document.querySelector('.hex_cursor');
-let hexContainer = document.querySelector('.contact_block');
+let hexContainer = document.querySelector('.hex_container');
 let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 if (isMobile) {
     // Automatic running and bouncing effect with random direction change for mobile screens
+    let containerRect = hexContainer.getClientRects();
 
     let x = Math.random() * window.innerWidth;
     let y = Math.random() * window.innerHeight;
     let directionX = 1; // Initial direction along the X-axis
     let directionY = 1; // Initial direction along the Y-axis
-    const speedX = 1; // Speed of movement along the X-axis
-    const speedY = 1; // Speed of movement along the Y-axis
+    const speedX = 2; // Speed of movement along the X-axis
+    const speedY = 2; // Speed of movement along the Y-axis
 
     function moveCursor() {
         // Calculate new position
         x += directionX * speedX;
         y += directionY * speedY;
         
+        containerRect = hexContainer.getClientRects();
 
         // Bounce off the screen edges
         if (x >= hexContainer.innerWidth - cursor.offsetWidth || x <= 0) {
