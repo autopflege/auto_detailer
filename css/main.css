@@ -689,10 +689,18 @@ flex-direction: column;
 .progress {
   display: inline-block;
   width: 26em;
-  height: 3em;
+  height: 2.4em;
   margin: 0.5em;
   border-radius: 20px;
   background: #09090e;
+  font-size: 18px;
+}
+.progress div {
+  text-align: right;
+  padding-top: 12px; 
+  padding-right: 14px;
+  color: white;
+  font-weight:bolder;
 }
 
 .bar {

@@ -590,6 +590,13 @@
     height: 1.7em;
     margin: 0.5em;
     border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .progress div {  
+    padding-top: 3px; 
+    padding-bottom: 2px;
+    padding-right: 10px;
   }
 
   .photo_block {
