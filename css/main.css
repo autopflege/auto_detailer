@@ -721,18 +721,4 @@ flex-direction: column;
   color: #fff;
 }
 
-.bar.learning::before {
-  width: calc(35% - 10px);
-}
 
-.bar.basic::before {
-  width: calc(60% - 10px);
-}
-
-.bar.intermediate::before {
-  width: calc(80% - 10px);
-}
-
-.bar.expert::before {
-  width: calc(100% - 10px);
-}

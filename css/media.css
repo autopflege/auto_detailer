@@ -290,6 +290,24 @@
     border-radius: 20px;
   }
   
+
+  .bar.learning {
+    width: calc(35%);
+  }
+  
+  .bar.basic {
+    width: calc(60%);
+  }
+  
+  .bar.intermediate {
+    width: calc(80%);
+  }
+  
+  .bar.expert {
+    width: calc(100%);
+  }
+
+
   .photo_block {
     width: 13em;
     bottom: -52px;
