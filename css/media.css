@@ -574,6 +574,11 @@
     margin-left: -37px;
 }
 
+.hex_cursor {
+  width: 10em;
+  height: 10em;
+}
+
   #details {
     background-size: 800px;
     background-position: -12em -13em;
@@ -600,7 +605,7 @@
   }
 
   .shadow {
-    box-shadow: 0px 15px 18px rgb(92 104 157 / 30%);
+    box-shadow: 0px 15px 18px rgb(92 104 157 / 25%);
 }
 
   .photo_block {
