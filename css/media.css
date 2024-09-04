@@ -296,11 +296,11 @@
   }
   
   .bar.basic {
-    width: calc(60%);
+    width: calc(50%);
   }
   
   .bar.intermediate {
-    width: calc(80%);
+    width: calc(65%);
   }
   
   .bar.expert {
@@ -601,13 +601,6 @@
   75%  {left: 5em; top: 25em;}
   100% {left: 5em; top: 15em;}
   }
-
-
-
-
-
-
-
 
   #details {
     background-size: 800px;
