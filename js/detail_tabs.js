@@ -80,9 +80,9 @@ function triggerBarAnimations() {
             if (bar.classList.contains('learning')) {
                 bar.style.width = '35%';
             } else if (bar.classList.contains('basic')) {
-                bar.style.width = '60%';
+                bar.style.width = '50%';
             } else if (bar.classList.contains('intermediate')) {
-                bar.style.width = '80%';
+                bar.style.width = '65%';
             } else if (bar.classList.contains('expert')) {
                 bar.style.width = '100%';
             }
