@@ -16,6 +16,11 @@ document.querySelector('.details_menu').addEventListener('click', function(e) {
         var activeTab = document.getElementById(tabId);
         activeTab.classList.add('details_active');
         fadeIn(activeTab, 350);
+
+        // Trigger animations only if the 'languages' tab is activated
+        if (tabId === 'languages') {
+            triggerBarAnimations();  // Adjust 'languages' to match your tab's data-tab value
+        }
     }
 });
 
@@ -59,9 +64,28 @@ function scrollTo(element, to, duration) {
     animateScroll();
 }
 
-Math.easeInOutQuad = function (t, b, c, d) {
+Math.easeInOutQuad = function(t, b, c, d) {
     t /= d / 2;
     if (t < 1) return c / 2 * t * t + b;
     t--;
     return -c / 2 * (t * (t - 2) - 1) + b;
 };
+
+// Function to trigger bar animations
+function triggerBarAnimations() {
+    const bars = document.querySelectorAll('.bar');
+
+    setTimeout(() => {
+        bars.forEach(bar => {
+            if (bar.classList.contains('learning')) {
+                bar.style.width = '35%';
+            } else if (bar.classList.contains('basic')) {
+                bar.style.width = '60%';
+            } else if (bar.classList.contains('intermediate')) {
+                bar.style.width = '80%';
+            } else if (bar.classList.contains('expert')) {
+                bar.style.width = '100%';
+            }
+        });
+    }, 100);  // Delay of 100ms
+}

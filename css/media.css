@@ -268,6 +268,10 @@
     height: -webkit-fill-available;
   }
 
+  .bar {
+    width: 0%;  /* Should not be overridden on mobile */
+}
+
   .hex_container .invisible {
     display: none;
 }
@@ -275,10 +279,17 @@
   #details {
     background-size: 960px;
     background-position: -10em -15em;
-    height: 200px;
+    height: 260px;
     padding: 1em 0 1em 0;
   }
 
+  .progress { 
+    width: 23em;
+    height: 1.7em;
+    margin: 0.5em;
+    border-radius: 20px;
+  }
+  
   .photo_block {
     width: 13em;
     bottom: -52px;
@@ -533,11 +544,34 @@
     height: -webkit-fill-available;
   }
 
+  .hex_container .hexs_row .hexagon {
+    position: relative;
+    width: 60px;
+    height: 70px;
+    top: 10px;
+  }
+
+  .hex_container .hexs_row {
+    margin-top: -20px;
+    margin-left: -37px;
+}
+
   #details {
     background-size: 800px;
     background-position: -12em -13em;
-    height: 200px;
+    height: 250px;
     padding: 1em 0 1em 0;
+  }
+
+  .languages p {
+    font-size: 14px;
+  }
+
+  .progress { 
+    width: 23em;
+    height: 1.7em;
+    margin: 0.5em;
+    border-radius: 20px;
   }
 
   .photo_block {
@@ -641,7 +675,7 @@
     padding-left: 1em;
     padding-top: 1em;
     padding-right: 1em;
-    padding-bottom: 0;
+    padding-bottom: 1em;
   }
 
   .certification {
