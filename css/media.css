@@ -282,7 +282,7 @@
 
   .acc_bar {
     width: 0%;  /* Should not be overridden on mobile */
-    animation: level 0.4s ease-in-out forwards;
+    animation: level 1s ease forwards;
     opacity: 0;
 }
 
@@ -315,17 +315,14 @@
   
   .acc_bar.learning {
     width: 35%;
-    animation-delay: 0.3s;
   }
   
   .acc_bar.basic {
     width: 50%;
-    animation-delay: 0.2s;
   }
   
   .acc_bar.intermediate {
     width: 65%;
-    animation-delay: 0.1s;
   }
   
   .acc_bar.expert {
