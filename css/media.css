@@ -267,11 +267,6 @@
   .hex_container {
     height: -webkit-fill-available;
   }
-
-  .bar {
-    width: 0%;  /* Should not be overridden on mobile */
-}
-
   .hex_container .invisible {
     display: none;
 }
@@ -283,30 +278,61 @@
     padding: 1em 0 1em 0;
   }
 
-  .progress { 
+  /*Accordion bars animation*/
+
+  .acc_bar {
+    width: 0%;  /* Should not be overridden on mobile */
+    animation: level 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+  .acc_progress { 
+    position: relative;
     width: 23em;
     height: 1.7em;
     margin: 0.5em;
     border-radius: 20px;
   }
   
+@keyframes level {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes level {
+  0%{
+    width: 0;
+    opacity: 1;
+  }
+100%{
+    opacity: 1;
+  }
+}
+  
+  .acc_bar.learning {
+    width: 35%;
+    animation-delay: 0.3s;
+  }
+  
+  .acc_bar.basic {
+    width: 50%;
+    animation-delay: 0.2s;
+  }
+  
+  .acc_bar.intermediate {
+    width: 65%;
+    animation-delay: 0.1s;
+  }
+  
+  .acc_bar.expert {
+    width: 100%;
+  } 
 
-  .bar.learning {
-    width: calc(35%);
-  }
-  
-  .bar.basic {
-    width: calc(50%);
-  }
-  
-  .bar.intermediate {
-    width: calc(65%);
-  }
-  
-  .bar.expert {
-    width: calc(100%);
-  }
-
+  /*main part*/
 
   .photo_block {
     width: 13em;
@@ -613,7 +639,7 @@
     font-size: 14px;
   }
 
-  .progress { 
+  .acc_progress { 
     width: 23em;
     height: 1.7em;
     margin: 0.5em;
@@ -621,7 +647,7 @@
     font-size: 14px;
   }
 
-  .progress div {  
+  .acc_progress div {  
     padding-top: 3px; 
     padding-bottom: 2px;
     padding-right: 10px;

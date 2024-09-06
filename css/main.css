@@ -686,7 +686,7 @@ flex-direction: column;
 }
 
 /*Language progress bar*/
-.progress {
+.progress, .acc_progress {
   display: inline-block;
   width: 26em;
   height: 2.4em;
@@ -695,7 +695,7 @@ flex-direction: column;
   background: #09090e;
   font-size: 18px;
 }
-.progress div {
+.progress div, .acc_progress div {
   text-align: right;
   padding-top: 12px; 
   padding-right: 14px;
@@ -703,13 +703,13 @@ flex-direction: column;
   font-weight:bolder;
 }
 
-.bar {
+.bar, .acc_bar {
   border-radius: 20px;
   width: 0%; /* Start with width at 0% */
   height: 100%;
   transition: width 1s cubic-bezier(.36, .55, .63, .48); /* Smooth animation */
 }
-.bar::before {
+.bar::before, .acc_bar::before {
   content: attr(data-skill);
   display: inline-block;
   padding: 5px 0 5px 10px;

@@ -12,20 +12,6 @@ $(document).ready(function(){
     });
 });
 
-// Event listener for accordion titles on mobile
-document.querySelectorAll('.title_accord').forEach(function(accordionTitle) {
-    accordionTitle.addEventListener('click', handleAccordionClick);
-    accordionTitle.addEventListener('touchstart', handleAccordionClick);
-});
-
-function handleAccordionClick(e) {
-    var accordionSection = e.target.closest('section');
-
-    if (accordionSection && accordionSection.classList.contains('languages')) {
-        triggerBarAnimations();
-    }
-}
-
 function fadeIn(element, duration) {
     element.style.opacity = 0;
     var last = +new Date();
@@ -37,26 +23,4 @@ function fadeIn(element, duration) {
         }
     };
     tick();
-}
-
-function triggerBarAnimations() {
-    const bars = document.querySelectorAll('.bar');
-
-    setTimeout(() => {
-        bars.forEach(bar => {
-            bar.style.display = 'none';  // Force repaint
-            bar.offsetHeight;  // Force repaint
-            bar.style.display = '';  // Reset display
-            
-            if (bar.classList.contains('learning')) {
-                bar.style.width = '35%';
-            } else if (bar.classList.contains('basic')) {
-                bar.style.width = '60%';
-            } else if (bar.classList.contains('intermediate')) {
-                bar.style.width = '80%';
-            } else if (bar.classList.contains('expert')) {
-                bar.style.width = '100%';
-            }
-        });
-    }, 100);  // Delay of 100ms
 }
