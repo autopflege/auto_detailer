@@ -383,7 +383,8 @@
   }
 
   .title p {
-    display: none;
+    margin: 1em;
+    font-size: 0.9em;
   }
 
   .mail:before,
