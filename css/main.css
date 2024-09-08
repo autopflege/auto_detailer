@@ -79,7 +79,7 @@ header {
 .wrapper {
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   width: 1115px;
   position: relative;
 }
@@ -207,16 +207,27 @@ a.mail {
 
 .title {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 56px;
+  margin-top: 1.8em;
+  margin-bottom: 2.2em;
 }
+
 .title h1 {
   letter-spacing: 5px;
   font-family: "Nasalization", sans-serif;
+  margin-bottom: 5px;
 }
 
 .title h2 {
   letter-spacing: 13px;
+  margin-bottom: 1em;
+}
+
+.title p {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 1em;
+  font-size: 20px;
 }
 
 .info {

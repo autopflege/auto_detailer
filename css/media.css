@@ -6,9 +6,9 @@
 }
 
 @media screen and (max-width: 4080px) {
-  .divider_2 {
+  /* .divider_2 {
     display: none;
-  }
+  } */
 
   .details_tabs {
     padding: 3em 2em;
@@ -382,6 +382,10 @@
     letter-spacing: 4.5px;
   }
 
+  .title p {
+    display: none;
+  }
+
   .mail:before,
   .mail:after {
     display: none;
@@ -598,8 +602,8 @@
 }
 /* Hex cursor for mobile */
 .hex_cursor {
-  width: 8em;
-  height: 8em;
+  width: 9em;
+  height: 9em;
 
   --xA: 10em;
   --yA: 12em;
