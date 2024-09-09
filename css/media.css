@@ -631,8 +631,8 @@
   }
 
   #details {
-    background-size: 800px;
-    background-position: -12em -13em;
+    background-size: 600px;
+    background-position: -8em -4.5em;
     height: 250px;
     padding: 1em 0 1em 0;
   }
@@ -693,7 +693,7 @@
 
   .title {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   .title h1 {
@@ -915,8 +915,8 @@ height: 1.5em;
   }
 
   #contacts {
-    background-size: 680px;
-    background-position: -10em -13em;
+    background-size: 560px;
+    background-position: -7.5em -9em;
     height: 170px;
   }
 
