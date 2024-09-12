@@ -308,6 +308,12 @@ button.download {
   font-family: "Nasalization", sans-serif;
 }
 
+.insta_icon {
+
+  width: 2em;
+  height: 2em;
+}
+
 button.whatsapp {
   display: flex;
   align-items: center;
