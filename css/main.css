@@ -309,9 +309,13 @@ button.download {
 }
 
 .insta_icon {
+  width: 1.5em;
+  height: 1.5em;
+}
 
-  width: 2em;
-  height: 2em;
+.insta_button {
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 button.whatsapp {
@@ -356,7 +360,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   cursor: pointer;
-  margin-left: 1.7em;
+  /* margin-left: 1.7em; */
 }
 
 .icons img {
